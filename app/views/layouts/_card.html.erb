@@ -1,0 +1,11 @@
+<div class="card">
+  <% if @todo.completed %>
+    <p> Completado </p>
+  <% else %>
+    <p> Incompleto <%= link_to 'Completar', complete_todo_path(@todo), class: 'btn btn-success' %> </p>
+  <% end %>
+  <p> Descripción: <%= @todo.description %> </p>
+  <p> <%= link_to 'Editar', edit_todo_path(@todo), class: 'btn btn-warning' %>
+  <%= link_to 'Borrar', @todo, method: :delete, class: 'btn btn-danger' %>
+  <%= link_to 'Ver detalle', @todo, class: 'btn btn-primary' %> </p>
+</div>

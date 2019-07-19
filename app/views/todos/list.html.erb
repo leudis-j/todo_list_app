@@ -1,0 +1,12 @@
+<div class="container row mt-5">
+  <div class="col col-md-6">
+    <h2>No completados</h2>
+    <% @list = @todos_incompletos %>
+    <%= render "layouts/card_list" %>
+  </div>
+  <div class="col col-md-6">
+    <h2>Completados</h2>
+    <% @list = @todos_completados %>
+    <%= render "layouts/card_list" %>
+  </div>
+</div>

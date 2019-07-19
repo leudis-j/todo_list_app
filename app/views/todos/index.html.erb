@@ -1,0 +1,6 @@
+<h1>ToDOs</h1>
+
+<% @list = @todos %>
+<%= render "layouts/card_list" %>
+
+<%= link_to 'nuevo ToDO', todos_new_path, class: 'btn btn-info'  %>

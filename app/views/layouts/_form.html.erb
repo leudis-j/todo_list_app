@@ -1,0 +1,9 @@
+<%= form_with model: @todo, local: true do |f| %>
+<div class="card col-md-6">
+  <h3>Descripción</h3>
+  <%= f.text_area :description %>
+  <%= f.label :completado %>
+  <%= f.check_box :completed, value: true  %>
+  <%= f.submit "Enviar" %>
+</div>
+<% end %>

@@ -1,0 +1,14 @@
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light mb-5">
+  <a class="navbar-brand" href="<%= asset_path todos_path %>">ToDo</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="navbar-nav ml-auto">
+      <a class="nav-item nav-link <%= 'active' if params[:action] == 'index'%>" href="<%= asset_path todos_path %>">Index <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link <%= 'active' if params[:action] == 'list'%>" href="<%= asset_path todos_list_path %>">List</a>
+      <a class="nav-item nav-link <%= 'active' if params[:action] == 'new'%>" href="<%= asset_path todos_new_path %>">New</a>
+    </div>
+  </div>
+</nav>

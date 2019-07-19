@@ -1,0 +1,8 @@
+<ol>
+<% @list.each do |todo| %>
+  <% @todo = todo %>
+  <li>
+      <%= render "layouts/card" %>
+  </li>
+<% end %>
+</ol>
